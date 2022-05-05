@@ -1,13 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Karlar', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #1C1C1C;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 800px;
+  min-height: 800px;
+  background-color: #F5F7FB;
+  margin: auto;
+  color: #293264;
+}
+
+.Home {
+  text-align: center;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 7px;
+}
+
+button {
+  width: 193px;
+  height: 50px;
+  color: white;
+  border-color: transparent;
+  margin-top: 29px;
+  border-radius: 15px;
+  background-color: #4D5B9E;
+  font-size: 16px;
+}
+
+button:hover {
+  border: 2px solid white;
+}
+
+button:active {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.btn-start {
+  height: 52px; 
+}
+
+.QuizBox {
+  padding: 0 100px;
+}
+
+.question {
+  margin-bottom: 10px;
+}
+
+.answers-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.answer {
+  padding: 5px 10px;
+  border: 1px solid #293264;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button-box {
+  text-align: center;
+}
+
+.selected {
+  background-color: #D6DBF5;
+}
+
+.true {
+  background-color: #94D7A2;
+}
+
+.fail {
+  background-color: #F8BCBC;
+}
+
+.checked {
+  border-color: rgba(77, 91, 158, 0.7);
+  color: rgba(77, 91, 158, 0.7);
 }
